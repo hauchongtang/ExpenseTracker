@@ -15,7 +15,9 @@ const app = express()
 
 app.use(express.json())
 
+// Use Routes
 app.use('/api/v1/transactions', transactions)
+// app.use('/api/v1/users', './routes/users')
 
 // Serve static assets if in production
 if (process.env.NODE_ENV === 'production') {
