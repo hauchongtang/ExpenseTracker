@@ -9,6 +9,7 @@
 * [Setup](#setup)
 * [Features](#features)
 * [Status](#status)
+* [Credits](#credits)
 * [Contact](#contact)
 
 ## General info
@@ -50,13 +51,18 @@ Run `npm install` in console inside the root of ExpenseTracker to install all de
 To start the app locally, run `npm run dev` in console which starts up both frontend and backend concurrently.
 
 ## Features
-#### Features that are functional :smile:
+#### Functional :smile:
 * Add an item and its expense/ income
 * Delete item object
 * Displays account balance + income & expense values
 
 ## Status --> Running
 [![forthebadge](https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://forthebadge.com)
+
+## Credits
+Adapted from Vanilla projects and converted to ReactJS:
+
+[VanillaProjects](https://github.com/bradtraversy/vanillawebprojects/tree/master/expense-tracker)
 
 ## Contact
 [@HCTANG](https://github.com/thchong-code) - feel free to contact me!
