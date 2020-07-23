@@ -56,6 +56,11 @@ To start the app locally, run `npm run dev` in console which starts up both fron
 * Delete item object
 * Displays account balance + income & expense values
 
+#### W.I.P
+* User credientials
+* JWT authentication (backend done --> see loginFunction branch)
+* Interactive dashboard --> Charts and graphs you name it!
+
 ## Status --> Running
 [![forthebadge](https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://forthebadge.com)
 
