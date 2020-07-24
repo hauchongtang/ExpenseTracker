@@ -47,6 +47,12 @@ Clone main branch of git repository to desired directory with `git clone`
 
 Run `npm install` in console inside the root of ExpenseTracker to install all dependencies.
 
+Create a file named `config.env` inside the config folder & add in the following:
+
+* `MONGODB_URI= (create a database in mongoDB Atlas paste the link to connect here, remember to include inverted commas)
+   NODE_ENV=production
+   PORT=5000`
+
 To start the app locally, run `npm run dev` in console which starts up both frontend and backend concurrently.
 
 ## Features
