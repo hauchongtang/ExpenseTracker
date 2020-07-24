@@ -39,6 +39,7 @@ Fullstack Expense Tracker App
 - ReactJS
 - NodeJS
 - Deployed using Heroku
+- REST Api ==> [API](https://sheltered-refuge-87677.herokuapp.com/api/v1/transactions)
 
 ## Setup
 Clone main branch of git repository to desired directory with `git clone`
