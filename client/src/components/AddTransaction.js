@@ -17,11 +17,7 @@ export const AddTransaction = () => {
   }
 
   const handleAmountChange = (event) => {
-    if (!click) {
-      setAmount(event.target.value)
-    } else {
-      setAmount(null)
-    }
+    setAmount(event.target.value)
   }
 
   const onSubmit = event => {
