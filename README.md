@@ -17,21 +17,20 @@ Fullstack Expense Tracker App
 > Track spending habits and be in control of your spending to achieve your financial goals! :smile:
 
 ## Screenshots
-* Mainpage
+#### Balance Dash
 
-![ss1](./img/ss1.jpg)
+![bal](./img/bal.jpg)
+> Total income and expense at a glance
 
-* Add transaction
+#### Past Transactions
 
-![ss1](./img/ss1.jpg)
+![dash](./img/dash.jpg)
+> Monitor and delete your transactions
 
-* Delete transaction 
+#### Categories
 
-![ss1](./img/ss1.jpg)
-
-* Balance board
-
-![ss1](./img/ss1.jpg)
+![cat](./img/cat.jpg)
+> Various array of choices
 
 ## Technologies
 ### MERN Stack
