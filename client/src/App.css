@@ -6,10 +6,11 @@
 
 * {
   box-sizing: border-box;
+  text-align: center;
 }
 
 body {
-  background-color: #f7f7f7;
+  background-color: #1f1a24;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +18,35 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: 'Lato', sans-serif;
+  color: whitesmoke
+}
+
+.navbar {
+  padding: unset;
+}
+
+.mr-2, .mx-2 {
+  margin-right: unset;
+}
+
+.navbar-light .navbar-brand {
+  color: #BB86fC;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: white
+}
+
+.mr-2, .mx-2 {
+    margin: 0 !important;
+}
+
+a#directory {
+  color: #BB86fC
+}
+
+a#directory:hover {
+  color: white
 }
 
 .container {
@@ -24,9 +54,24 @@ body {
   width: 350px;
 }
 
+.card {
+  border: none;
+}
+
+.form-control {
+  color: white;
+  background-color: #3e3946;
+  border-color: #BB86fC;
+}
+
 h1 {
+  color: #BB86fC;
+}
+
+h2 {
   letter-spacing: 1px;
   margin: 0;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -41,7 +86,7 @@ h4 {
 }
 
 .inc-exp-container {
-  background-color: #fff;
+  background-color: #332940;
   box-shadow: var(--box-shadow);
   padding: 20px;
   display: flex;
@@ -59,7 +104,7 @@ h4 {
 }
 
 .money {
-  font-size: 20px;
+  font-size: 28px;
   letter-spacing: 1px;
   margin: 5px 0;
 }
@@ -72,31 +117,16 @@ h4 {
   color: #c0392b;
 }
 
-label {
-  display: inline-block;
-  margin: 10px 0;
-}
-
-input[type='text'],
-input[type='number'] {
-  border: 1px solid #dedede;
-  border-radius: 2px;
-  display: block;
-  font-size: 16px;
-  padding: 10px;
-  width: 100%;
-}
-
 .btn {
   cursor: pointer;
-  background-color: #9c88ff;
+  background-color: #332940;
   box-shadow: var(--box-shadow);
   color: #fff;
   border: 0;
   display: block;
   font-size: 16px;
-  margin: 10px 0 30px;
-  padding: 10px;
+  margin: 10px 0 10px;
+  padding: 5px;
   width: 100%;
 }
 
@@ -112,7 +142,7 @@ input[type='number'] {
 }
 
 .list li {
-  background-color: #fff;
+  background-color: #332940;
   box-shadow: var(--box-shadow);
   color: #333;
   display: flex;
@@ -123,11 +153,15 @@ input[type='number'] {
 }
 
 .list li.plus {
+  border-left: 5px solid #2ecc71;
   border-right: 5px solid #2ecc71;
+  color: white
 }
 
 .list li.minus {
+  border-left: 5px solid #c0392b;
   border-right: 5px solid #c0392b;
+  color: white;
 }
 
 .delete-btn {
@@ -148,4 +182,78 @@ input[type='number'] {
 
 .list li:hover .delete-btn {
   opacity: 1;
+}
+
+.card-body {
+  background-color: #332940;
+}
+
+.btn-primary:hover {
+  background-color: #1f1a24;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  background-color: #1f1a24;
+}
+
+button#Salary.btn.btn-secondary.active {
+  background-color: #2ecc71;
+}
+button#Bonuses.btn.btn-secondary.active {
+  background-color: #2ecc71;
+}
+button#Transfer.btn.btn-secondary.active {
+  background-color: #1f1a24;
+}
+button#Bus.btn.btn-secondary.active {
+  background-color: #c0392b;
+}
+button#Train.btn.btn-secondary.active {
+  background-color: #c0392b;
+}
+button#Fuel.btn.btn-secondary.active {
+  background-color: #c0392b;
+}
+button#Food.btn.btn-secondary.active {
+  background-color: #c0392b;
+}
+button#Loans.btn.btn-secondary.active {
+  background-color: #c0392b;
+}
+button#Groceries.btn.btn-secondary.active {
+  background-color: #c0392b;
+}
+button#Others.btn.btn-secondary.active {
+  background-color: #1f1a24;
+}
+
+#Salary:hover {
+  color: #1f1a24
+}
+#Bonuses:hover {
+  color: #1f1a24
+}
+#Transfer:hover {
+  color: #1f1a24
+}
+#Bus:hover {
+  color: #1f1a24
+}
+#Train:hover {
+  color: #1f1a24
+}
+#Fuel:hover {
+  color: #1f1a24
+}
+#Food:hover {
+  color: #1f1a24
+}
+#Loans:hover {
+  color: #1f1a24
+}
+#Groceries:hover {
+  color: #1f1a24
+}
+#Others:hover {
+  color: #1f1a24;
 }
