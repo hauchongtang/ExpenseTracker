@@ -9,7 +9,7 @@ import { AddTransaction } from './components/AddTransaction'
 import { GlobalProvider } from './context/GlobalState'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './App.css';
+import './dark.css';
 
 function App() {
   return (
