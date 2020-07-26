@@ -104,17 +104,20 @@ h4 {
 }
 
 .money {
-  font-size: 28px;
+  font-size: 20px;
   letter-spacing: 1px;
   margin: 5px 0;
+  overflow-wrap: anywhere;
 }
 
 .money.plus {
   color: #2ecc71;
+  justify-content: center;
 }
 
 .money.minus {
   color: #c0392b;
+  justify-content: center;
 }
 
 .btn {
