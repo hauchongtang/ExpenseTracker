@@ -9,6 +9,56 @@
   text-align: center;
 }
 
+.toggle-control {
+    position: fixed;
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+}
+
+input[type='checkbox'].dmcheck {
+    width: 40px;
+    height: 10px;
+    background: #555;
+    position: relative;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    vertical-align: 2px;
+    outline: none;
+}
+
+input[type=checkbox] {
+  appearance: none;
+}
+
+.dark-mode-toggle > button {
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    color: #ffe600;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.dark-mode-toggle > button:last-child {
+    color: #666;
+}
+
+body.light-mode {
+  background-color: #FAE6FA;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #1f1a24;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
 body {
   background-color: #1f1a24;
   display: flex;
@@ -25,6 +75,7 @@ body {
   padding: unset;
 }
 
+
 .mr-2, .mx-2 {
   margin-right: unset;
 }
@@ -33,8 +84,16 @@ body {
   color: #BB86fC;
 }
 
+body.light-mode .navbar-light .navbar-brand {
+  color: #332940;
+}
+
 .navbar-light .navbar-brand:hover {
   color: white
+}
+
+body.light-mode .navbar-light .navbar-brand:hover {
+  color: #BB86fC;
 }
 
 .mr-2, .mx-2 {
@@ -42,6 +101,14 @@ body {
 }
 
 a#directory {
+  color: #BB86fC
+}
+
+body.light-mode a#directory {
+  color: #332940;
+}
+
+body.light-mode a#directory:hover {
   color: #BB86fC
 }
 
@@ -66,6 +133,10 @@ a#directory:hover {
 
 h1 {
   color: #BB86fC;
+}
+
+body.light-mode h1 {
+  color: #332940
 }
 
 h2 {
@@ -103,6 +174,10 @@ h4 {
   border-right: 1px solid #dedede;
 }
 
+body.light-mode .inc-exp-container {
+  background-color: #e2cbfd;
+}
+
 .money {
   font-size: 28px;
   letter-spacing: 1px;
@@ -130,6 +205,11 @@ h4 {
   width: 100%;
 }
 
+body.light-mode .btn {
+  background-color: #e2cdfd;
+  color: black
+}
+
 .btn:focus,
 .delete-btn:focus {
   outline: 0;
@@ -150,6 +230,11 @@ h4 {
   position: relative;
   padding: 10px;
   margin: 10px 0;
+}
+
+body.light-mode .list li {
+  background-color: #e2cdfd;
+  color: black
 }
 
 .list li.plus {
@@ -186,6 +271,11 @@ h4 {
 
 .card-body {
   background-color: #332940;
+}
+
+body.light-mode .card-body{
+  background-color: #e2cdfd;
+  color: black
 }
 
 .btn-primary:hover {

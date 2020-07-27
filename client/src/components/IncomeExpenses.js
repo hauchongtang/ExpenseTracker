@@ -29,7 +29,7 @@ export const IncomeExpenses = () => {
 
   return (
     <>
-      <div className='inc-exp-container'>
+      <div className='inc-exp-container dark-mode light-mode'>
         <div>
           <h4>Income</h4>
           <p className='money plus'>{numberWithCommas(income)}</p>
@@ -40,7 +40,7 @@ export const IncomeExpenses = () => {
         </div>
       </div>
       <h4>STATISTICS</h4>
-      <div className='inc-exp-container'>
+      <div className='inc-exp-container dark-mode light-mode'>
         <div>
           <h4>Most</h4>
           <p className='most-used'>{mostFrequent(groups)}</p>

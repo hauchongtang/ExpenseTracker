@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import DarkModeToggle from './dark'
 
 export const NaviBar = () => {
   const [collapsed, setCollapsed] = useState(true);
@@ -15,6 +16,7 @@ export const NaviBar = () => {
             <NavLink id='directory' href="https://github.com/thchong-code/ExpenseTracker">GitHub</NavLink>
           </NavItem>
         </Nav>
+        <DarkModeToggle />
       </Navbar>
     </div>
   );
