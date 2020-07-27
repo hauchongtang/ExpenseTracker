@@ -30,7 +30,7 @@ input[type='checkbox'].dmcheck {
     outline: none;
 }
 
-input[type=checkbox] {
+[type=checkbox] {
   appearance: none;
 }
 
@@ -45,6 +45,10 @@ input[type=checkbox] {
 
 .dark-mode-toggle > button:last-child {
     color: #666;
+}
+
+.dark-mode-toggle {
+  text-align: right;
 }
 
 body.light-mode {

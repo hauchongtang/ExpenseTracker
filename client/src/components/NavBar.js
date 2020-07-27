@@ -13,8 +13,8 @@ export const NaviBar = () => {
             <NavLink id='directory' href="https://github.com/thchong-code/ExpenseTracker">GitHub</NavLink>
           </NavItem>
         </Nav>
-        <DarkModeToggle />
       </Navbar>
+      <DarkModeToggle />
     </div>
   );
 }
