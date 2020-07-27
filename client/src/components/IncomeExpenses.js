@@ -10,11 +10,11 @@ export const IncomeExpenses = () => {
 
   const income = amounts
     .filter(item => item > 0)
-    .reduce((acc, item) => (acc += item), 0).toFixed(2)
+    .reduce((acc, item) => (acc += item), 0)
 
   const expense = amounts
     .filter(item => item < 0)
-    .reduce((acc, item) => (acc += item), 0).toFixed(2) * -1
+    .reduce((acc, item) => (acc += item), 0) * -1
 
   // Filter into groups: most,least
   const groups = transactions.map(transaction => transaction.text)
