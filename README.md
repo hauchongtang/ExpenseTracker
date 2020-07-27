@@ -17,6 +17,11 @@ Fullstack Expense Tracker App
 > Track spending habits and be in control of your spending to achieve your financial goals! :smile:
 
 ## Screenshots
+#### Light/ Dark Mode with Purple Theme
+
+![theme](./img/theme.jpg)
+> Toggle for both modes: ease your eyes at night by pressing the moon icon and adjust to the day by pressing the sun icon!
+
 #### Balance Dash
 
 ![bal](./img/bal.jpg)
