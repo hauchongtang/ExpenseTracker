@@ -16,7 +16,7 @@
     align-items: center;
 }
 
-input[type='checkbox'].dmcheck {
+input[type='checkbox'].dmcheck + label {
     width: 40px;
     height: 10px;
     background: #555;

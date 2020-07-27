@@ -14,7 +14,7 @@ export const NaviBar = () => {
           </NavItem>
         </Nav>
       </Navbar>
-      <DarkModeToggle />
+      <div><DarkModeToggle /></div>
     </div>
   );
 }
