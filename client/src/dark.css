@@ -10,10 +10,20 @@
 }
 
 .toggle-control {
-    position: fixed;
+    position: static;
     padding: 0 4px;
     display: none;
     align-items: center;
+    float: right;
+}
+
+button #lightswitch {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+button #darkswitch {
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 input[type='checkbox'].dmcheck + label {
