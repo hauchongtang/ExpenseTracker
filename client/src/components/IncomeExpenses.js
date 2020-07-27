@@ -10,22 +10,46 @@ export const IncomeExpenses = () => {
 
   const income = amounts
     .filter(item => item > 0)
-    .reduce((acc, item) => (acc += item), 0).toFixed(2)
+    .reduce((acc, item) => (acc += item), 0)
 
   const expense = amounts
     .filter(item => item < 0)
-    .reduce((acc, item) => (acc += item), 0).toFixed(2) * -1
+    .reduce((acc, item) => (acc += item), 0) * -1
+
+  // Filter into groups: most,least
+  const groups = transactions.map(transaction => transaction.text)
+  function mostFrequent(array) {
+    let map = array.map((a) => array.filter((b) => a === b).length);
+    return array[map.indexOf(Math.max(...map))];
+  }
+  function leastFrequent(array) {
+    let map = array.map((a) => array.filter((b) => a === b).length);
+    return array[map.indexOf(Math.min(...map))];
+  }
 
   return (
-    <div className='inc-exp-container'>
-      <div>
-        <h4>Income</h4>
-        <p className='money plus'>{ numberWithCommas(income) }</p>
+    <>
+      <div className='inc-exp-container dark-mode light-mode'>
+        <div>
+          <h4>Income</h4>
+          <p className='money plus'>{numberWithCommas(income)}</p>
+        </div>
+        <div>
+          <h4>Expense</h4>
+          <p className='money minus'>{numberWithCommas(expense)}</p>
+        </div>
       </div>
-      <div>
-        <h4>Expense</h4>
-  <p className='money minus'>{ numberWithCommas(expense) }</p>
+      <h4>STATISTICS</h4>
+      <div className='inc-exp-container dark-mode light-mode'>
+        <div>
+          <h4>Most</h4>
+          <p className='most-used'>{mostFrequent(groups)}</p>
+        </div>
+        <div>
+          <h4>Least</h4>
+          <p className='least-used'>{leastFrequent(groups)}</p>
+        </div>
       </div>
-    </div>
+    </>
   )
 }

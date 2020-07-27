@@ -4,7 +4,7 @@ import { Balance } from './components/Balance'
 import { IncomeExpenses } from './components/IncomeExpenses'
 import { TransactionList } from './components/TransactionList'
 import { AddTransaction } from './components/AddTransaction'
-// import { PopChart } from './components/PopChart'
+// import { PopChart } from './components/PopChart
 
 import { GlobalProvider } from './context/GlobalState'
 
