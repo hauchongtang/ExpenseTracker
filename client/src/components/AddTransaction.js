@@ -5,7 +5,7 @@ import { PromiseProvider } from 'mongoose';
 
 export const AddTransaction = () => {
   const [text, setText] = useState('');
-  const [amount, setAmount] = useState(null)
+  const [amount, setAmount] = useState(0)
   const [click, setClick] = useState(false)
 
   const { addTransaction } = useContext(GlobalContext)
@@ -35,7 +35,7 @@ export const AddTransaction = () => {
 
   return (
     <>
-      <h3>NEW TRANSACTION</h3>
+      <h4>NEW TRANSACTION</h4>
       <h4>{text}</h4>
       <Button color="primary" id="toggler" style={{ marginBottom: '1rem' }}>
         CATAGORIES
