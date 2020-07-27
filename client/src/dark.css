@@ -12,7 +12,7 @@
 .toggle-control {
     position: fixed;
     padding: 0 4px;
-    display: flex;
+    display: none;
     align-items: center;
 }
 
@@ -28,6 +28,9 @@ input[type='checkbox'].dmcheck + label {
     cursor: pointer;
     vertical-align: 2px;
     outline: none;
+}
+.hide{
+  display: none;
 }
 
 [type=checkbox] {
