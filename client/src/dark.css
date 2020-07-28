@@ -253,6 +253,18 @@ body.light-mode .btn {
   outline: 0;
 }
 
+ul {
+  padding-left: unset;
+}
+
+ul.txts {
+  padding-top: 11px;
+}
+
+ul#money {
+    text-align: right;
+}
+
 .list {
   list-style-type: none;
   padding: 0;
@@ -289,7 +301,7 @@ body.light-mode .list li {
 
 .delete-btn {
   cursor: pointer;
-  background-color: #e74c3c;
+  background-color: transparent;
   border: 0;
   color: #fff;
   font-size: 20px;

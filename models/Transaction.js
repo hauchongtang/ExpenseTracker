@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+const date = new Date()
+
 const TransactionSchema = new mongoose.Schema({
   text: {
     type: String,
@@ -11,8 +13,8 @@ const TransactionSchema = new mongoose.Schema({
     required: [true, 'Please add a positive or negative number']
   },
   createdAt: {
-    type: Date,
-    default: Date.now
+    type: String,
+    default: date.toDateString()
   }
 });
 

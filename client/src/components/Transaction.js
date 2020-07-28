@@ -12,14 +12,17 @@ export const Transaction = ({ transaction }) => {
   }
 
   return (
-    <li className={transaction.amount  < 0 ? 'minus' : 'plus'}>
-      {transaction.text} 
-      <span>
-        {sign}${numberWithCommas(Math.abs(transaction.amount))}
-      </span>
-      <button onClick={ handleDelete } className="delete-btn">
-        X
+    <>
+      <li className={transaction.amount < 0 ? 'minus' : 'plus'}>
+        <ul className='txts'>{transaction.text}</ul>
+        <ul>
+          <ul id='money'>{sign}${numberWithCommas(Math.abs(transaction.amount))}</ul>
+          <ul id='dates'>{transaction.createdAt}</ul>
+        </ul>
+        <button onClick={handleDelete} className="delete-btn">
+          ❌
       </button>
-    </li>
+      </li>
+    </>
   )
 }
