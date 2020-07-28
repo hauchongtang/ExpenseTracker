@@ -10,6 +10,7 @@ import Profile from "./components/Profile";
 import history from "./utils/history";
 import PrivateRoute from "./components/PrivateRoute";
 import Dashboard from './components/Dashboard'
+import { DataVisuals } from './components/DataVisuals'
 
 // import { PopChart } from './components/PopChart
 
@@ -35,10 +36,11 @@ function App() {
       <GlobalProvider>
         <div className="container">
           <NaviBar />
+          <AddTransaction />
           <Balance />
           <IncomeExpenses />
+          <DataVisuals />
           <TransactionList />
-          <AddTransaction />
         </div>
       </GlobalProvider>
     </>

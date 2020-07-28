@@ -27,6 +27,22 @@
   text-align: center;
 }
 
+text#pie-labels-0 {
+  font-size: 10px;
+}
+
+text#pie-labels-1 {
+  font-size: 10px;
+}
+
+body.dark-mode #pie-labels-0 {
+  fill: white;
+}
+
+body.light-mode #pie-labels-0{
+  fill: black;
+}
+
 .toggle-control {
     position: static;
     padding: 0 4px;
