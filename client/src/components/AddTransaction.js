@@ -55,7 +55,7 @@ export const AddTransaction = () => {
       <div>
         <form onSubmit={onSubmit}>
           <FormGroup>
-            <Input type="number" id="number" name="number" required value={amount} onChange={handleAmountChange} />
+            <Input type="number" id="number" name="number" step="0.01" required value={amount} onChange={handleAmountChange} />
           </FormGroup>
           <Button color="primary">ADD</Button>
         </form>
