@@ -44,7 +44,7 @@ Fullstack Expense Tracker App
 - ReactJS
 - NodeJS
 - Deployed using Heroku
-- REST Api ==> [API](https://sheltered-refuge-87677.herokuapp.com/api/v1/transactions)
+- RESTapi ==> [API](https://sheltered-refuge-87677.herokuapp.com/api/v1/transactions)
 
 ## Setup
 Clone main branch of git repository to desired directory with `git clone`
@@ -59,18 +59,21 @@ Create a file named `config.env` inside the config folder & add in the following
    NODE_ENV=production
    PORT=5000`
 
-To start the app locally, run `npm run dev` in console which starts up both frontend and backend concurrently.
+To start the app locally, run `npm run dev` in console which starts up both frontend and backend concurrently. Remove the Auth wrapper from index.js in client folder and App.js to remove Auth0.
 
 ## Features
 #### Functional :smile:
+* Support for mobile devices
+> On iOS devices, visit site on Safari Browser and click the share icon and add page to homescreen
+
+* Dark/ Light Mode with remember function or will set based on device default settings
 * Add an item and its expense/ income
-* Delete item object
-* Displays account balance + income & expense values
+* Delete item
+* Displays account balance on a pie chart + income & expense values
+* Auth0 login
 
 #### W.I.P
-* User credientials
-* JWT authentication (backend done --> see loginFunction branch)
-* Interactive dashboard --> Charts and graphs you name it!
+* Fix chart grid font color in dark mode
 
 ## Status --> Running
 [![forthebadge](https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://forthebadge.com)
@@ -81,4 +84,4 @@ Adapted from Vanilla projects and converted to ReactJS:
 [VanillaProjects](https://github.com/bradtraversy/vanillawebprojects/tree/master/expense-tracker)
 
 ## Contact
-[@HCTANG](https://github.com/thchong-code) - feel free to contact me!
+[HCTANG](https://github.com/thchong-code) - feel free to contact me!

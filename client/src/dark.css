@@ -8,13 +8,13 @@
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   html {
-    zoom: 1.5
+    zoom: 1.25
   }
 }
 
 @media (min-width: 1200px) {
   html {
-    zoom: 1.75
+    zoom: 1.25
   }
 }
 
