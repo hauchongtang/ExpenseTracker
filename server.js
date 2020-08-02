@@ -1,9 +1,11 @@
 const path = require('path')
 const express = require('express')
 const dotenv = require('dotenv')
-const colors = require('colors')
-const morgan = require('morgan')
+require('colors')
+require('morgan')
 const connectDB = require('./config/db')
+const users = require('./routes/users')
+const login = require('./controllers/login')
 
 dotenv.config({ path: './config/config.env' })
 
@@ -17,7 +19,8 @@ app.use(express.json())
 
 // Use Routes
 app.use('/api/v1/transactions', transactions)
-// app.use('/api/v1/users', './routes/users')
+app.use('/api/v1/users', users)
+app.use('/api/login', login)
 
 // Serve static assets if in production
 if (process.env.NODE_ENV === 'production') {

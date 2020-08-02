@@ -15,6 +15,10 @@ const TransactionSchema = new mongoose.Schema({
   createdAt: {
     type: String,
     default: date.toDateString()
+  },
+  users: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User'
   }
 });
 
