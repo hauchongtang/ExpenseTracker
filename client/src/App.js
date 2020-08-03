@@ -5,6 +5,7 @@ import { IncomeExpenses } from './components/IncomeExpenses'
 import { TransactionList } from './components/TransactionList'
 import { AddTransaction } from './components/AddTransaction'
 import { DataVisuals } from './components/DataVisuals'
+import { Login } from './components/Login'
 
 import { GlobalProvider } from './context/GlobalState'
 
@@ -17,6 +18,7 @@ function App() {
       <GlobalProvider>
         <div className="container">
           <NaviBar />
+          <Login />
           <AddTransaction />
           <Balance />
           <IncomeExpenses />
