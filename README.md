@@ -14,7 +14,7 @@
 
 ## General info
 Fullstack Expense Tracker App
-> Track spending habits and be in control of your spending to achieve your financial goals! :smile:
+> Track spending habits and be in control of spending to achieve your financial goals! :smile:
 
 ## Screenshots
 #### Light/ Dark Mode with Purple Theme
